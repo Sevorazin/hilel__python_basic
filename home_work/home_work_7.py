@@ -25,12 +25,13 @@ chess_players = {"Carlsen, Magnus": 1865,
                  "Caruana, Fabiano": 1792,
                  "Nepomniachtchi, Ian": 2773
                  }
+
 new_chess_players = {}
 
 
 def players():
-    for players in chess_players:
-        key, item = players, chess_players[players]
+    for player in chess_players:
+        key, item = player, chess_players[player]
         if item < 2000:
             continue
         else:
@@ -42,4 +43,5 @@ def players():
             new_chess_players.update(new_couple)
 
 
+players()
 print("new_chess_players : ", new_chess_players)

@@ -7,11 +7,11 @@
 
 # WHILE
 
-exit = 1
+
 number = 0
 summ_of_cubes = 0
 
-while exit:
+while True:
     number_input = (input("Введіть ціле додатне число: "))
     if not number_input.isdigit() or int(number_input) == 0:
         print("Помилка, повторіть введення!")
@@ -24,9 +24,9 @@ while exit:
             summ_of_cubes += number ** 3
 
         print("summ_of_cubes :", summ_of_cubes)
-        exit = input("""
+        exit_g = input("""
 Чи бажаєте ви вийти? (Y або Д)
 Ваша відповідь: """).upper()
-        if exit in ("Д", "Y"):
+        if exit_g in ("Д", "Y"):
             print('Goodbye!')
             break

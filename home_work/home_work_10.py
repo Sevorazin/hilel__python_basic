@@ -5,6 +5,7 @@
 лямбда-функція вміє визначати як парне чи парне, а й число нуль.
 """
 
+
 def examination(a):
     while True:
         if a.isdigit():
